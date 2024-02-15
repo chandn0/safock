@@ -9,12 +9,7 @@ async function main() {
   const chainId = await getChainId(hre)
 
   // Check if chain is supported
-  if (!networkConfig[chainId]) {
-    throw new Error(`Missing network configuration for ${hre.network.name}`)
-  }
 
-  console.log(`Starting full deployment on network ${hre.network.name} (${chainId})`)
-  console.log(`Deployer account: ${deployer.address}\n`)
 
   // Part 1/3 of the *overall* deployment process: Deploy all contracts
   // See `confirm.ts` for part 2

@@ -27,17 +27,9 @@ const settings = useEnv('NO_OPT') ? {} : { optimizer: { enabled: true, runs: 200
 const config: HardhatUserConfig = {
   defaultNetwork: 'hardhat',
   networks: {
-    hardhat: {
-      // network for tests/in-process stuff
-      forking: true
-        ? {
-            url: MAINNET_RPC_URL,
-            blockNumber: Number(useEnv('MAINNET_BLOCK', forkBlockNumber['default'].toString())),
-          }
-        : undefined,
-      gas: 0x1ffffffff,
-      blockGasLimit: 0x1fffffffffffff,
-      allowUnlimitedContractSize: true,
+    bb: {
+      chainId: 1,
+      url: "https://minio.delta.buildbear.io/submit/chandan-nodeId-25"
     },
     localhost: {
       // network for long-lived mainnet forks
@@ -46,24 +38,6 @@ const config: HardhatUserConfig = {
       gas: 0x1ffffffff,
       blockGasLimit: 0x1fffffffffffff,
       allowUnlimitedContractSize: true,
-    },
-    // anvil: {
-    //   url: 'http://127.0.0.1:8545/',
-    // },
-    goerli: {
-      chainId: 5,
-      url: GOERLI_RPC_URL,
-      accounts: {
-        mnemonic: MNEMONIC,
-      },
-    },
-    mainnet: {
-      chainId: 1,
-      url: MAINNET_RPC_URL,
-      accounts: {
-        mnemonic: MNEMONIC,
-      },
-      // gasPrice: 10_000_000_000,
     },
   },
   solidity: {

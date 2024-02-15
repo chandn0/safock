@@ -1,0 +1,33 @@
+{
+  "prerequisites": {
+    "RSR": "0x320623b8e4ff03373931769a31fc52a4e78b5d70",
+    "RSR_FEED": "0x759bBC1be8F90eE6457C44abc7d443842a976d02",
+    "GNOSIS_EASY_AUCTION": "0x0b7fFc1f4AD541A4Ed16b40D8c37f0929158D101"
+  },
+  "rewardableLib": "0x1C2Af89f9b83c1BBCc36279E17D3b67bd5166Af4",
+  "tradingLib": "0x39104a036b80E390cD4ECB69BC722bf80eFd3A9e",
+  "permitLib": "0xDd75a050Fc4349361ef3E40e35441DcAb1C38FD7",
+  "oracleLib": "0xA6a055cD7458e3400B4764C4a3B48cAF4F121131",
+  "facadeRead": "",
+  "facadeAct": "",
+  "facadeWriteLib": "",
+  "facadeWrite": "",
+  "deployer": "",
+  "rsrAsset": "",
+  "implementations": {
+    "main": "0x92bEa7431b7b58888AA6e11bc5497A3Ca807AadB",
+    "trade": "0xb8d887E800920Bb4c0c60b78142Dd22EcB7647A4",
+    "components": {
+      "assetRegistry": "0x3Be759b7d102675f21440912A5392968feAA149e",
+      "backingManager": "0xe3De37A9709D73A001BE89000f22dA98E5541472",
+      "basketHandler": "0x8F79fEe5c0F758B2fE3600A4B21F07bA51c53A5b",
+      "broker": "0xEA8e8b044bedee6973392EBADf271f1219AD4B82",
+      "distributor": "0xBbC452E98B6EA05392c16c115321C30631c56B75",
+      "furnace": "0x458912EE28a98C82348D4739eD04B3aF1beE0169",
+      "rsrTrader": "0xffaA5bdc81cB274d4a94437EEaCb206A029FE16C",
+      "rTokenTrader": "0xffaA5bdc81cB274d4a94437EEaCb206A029FE16C",
+      "rToken": "0x01b6C610C28c4Fd27d9A24A0455Ee70CaCCAF4B4",
+      "stRSR": "0x120d2F2c0094088D32eDDCDC7AfDf855587dBe2E"
+    }
+  }
+}
